@@ -1,0 +1,180 @@
+<!-- /*DEVELOPED BY MAYK*/ -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>SUDOKU/title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="SUDOKU.css">
+    <script type="text/javascript" src="SUDOKU.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js">
+
+    </script>
+  </head>
+  <body onload="showValues()">
+    <div class="container">
+      <h1>SUDOKU</h1>
+      <h5>Put 1 to 9 in each cell in the grid. Every row and column contains each digit once.</h5>
+      <table id="sudoku-table">
+        <tr class="tableRow">
+          <td class="tableCol ColA Group1"><button type="button" name="button" class="btn btn-info fieldBtn" onclick ="addNumber(11)" id="field11"></button></td>
+          <td class="tableCol ColA Group1"><button type="button" name="button" class="btn btn-info fieldBtn" onclick="addNumber(12)" id="field12"></button></td>
+          <td class="tableCol ColA Group1"><button type="button" name="button" class="btn btn-info fieldBtn" onclick="addNumber(13)" id="field13"></button></td>
+
+          <td class="tableCol ColA Group2"><button type="button" name="button" class="btn btn-info fieldBtn" onclick="addNumber(14)" id="field14"></button></td>
+          <td class="tableCol ColA Group2"><button type="button" name="button" class="btn btn-info fieldBtn" onclick="addNumber(15)" id="field15"></button></td>
+          <td class="tableCol ColA Group2"><button type="button" name="button" class="btn btn-info fieldBtn" onclick="addNumber(16)" id="field16"></button></td>
+
+          <td class="tableCol ColA Group3"><button type="button" name="button" class="btn btn-info fieldBtn" onclick="addNumber(17)" id="field17"></button></td>
+          <td class="tableCol ColA Group3"><button type="button" name="button" class="btn btn-info fieldBtn" onclick="addNumber(18)" id="field18"></button></td>
+          <td class="tableCol ColA Group3"><button type="button" name="button" class="btn btn-info fieldBtn" onclick="addNumber(19)" id="field19"></button></td>
+        </tr>
+        <tr class="tableRow">
+          <td class="tableCol ColB Group1"><button type="button" name="button" class="btn btn-info fieldBtn" onclick="addNumber(21)" id="field21"></button></td>
+          <td class="tableCol ColB Group1"><button type="button" name="button" class="btn btn-info fieldBtn" onclick="addNumber(22)" id="field22"></button></td>
+          <td class="tableCol ColB Group1"><button type="button" name="button" class="btn btn-info fieldBtn" onclick="addNumber(23)" id="field23"></button></td>
+
+          <td class="tableCol ColB Group2"><button type="button" name="button" class="btn btn-info fieldBtn" onclick="addNumber(24)" id="field24"></button></td>
+          <td class="tableCol ColB Group2"><button type="button" name="button" class="btn btn-info fieldBtn" onclick="addNumber(25)" id="field25"></button></td>
+          <td class="tableCol ColB Group2"><button type="button" name="button" class="btn btn-info fieldBtn" onclick="addNumber(26)" id="field26"></button></td>
+
+          <td class="tableCol ColB Group3"><button type="button" name="button" class="btn btn-info fieldBtn" onclick="addNumber(27)" id="field27"></button></td>
+          <td class="tableCol ColB Group3"><button type="button" name="button" class="btn btn-info fieldBtn" onclick="addNumber(28)" id="field28"></button></td>
+          <td class="tableCol ColB Group3"><button type="button" name="button" class="btn btn-info fieldBtn" onclick="addNumber(29)" id="field29"></button></td>
+
+        </tr>
+        <tr class="tableRow">
+          <td class="tableCol ColC Group1"><button type="button" name="button" class="btn btn-info fieldBtn" onclick="addNumber(31)" id="field31"></button></td>
+          <td class="tableCol ColC Group1"><button type="button" name="button" class="btn btn-info fieldBtn" onclick="addNumber(32)" id="field32"></button></td>
+          <td class="tableCol ColC Group1"><button type="button" name="button" class="btn btn-info fieldBtn" onclick="addNumber(33)" id="field33"></button></td>
+
+          <td class="tableCol ColC Group2"><button type="button" name="button" class="btn btn-info fieldBtn" onclick="addNumber(34)" id="field34"></button></td>
+          <td class="tableCol ColC Group2"><button type="button" name="button" class="btn btn-info fieldBtn" onclick="addNumber(35)" id="field35"></button></td>
+          <td class="tableCol ColC Group2"><button type="button" name="button" class="btn btn-info fieldBtn" onclick="addNumber(36)" id="field36"></button></td>
+
+          <td class="tableCol ColC Group3"><button type="button" name="button" class="btn btn-info fieldBtn" onclick="addNumber(37)" id="field37"></button></td>
+          <td class="tableCol ColC Group3"><button type="button" name="button" class="btn btn-info fieldBtn" onclick="addNumber(38)" id="field38"></button></td>
+          <td class="tableCol ColC Group3"><button type="button" name="button" class="btn btn-info fieldBtn" onclick="addNumber(39)" id="field39"></button></td>
+        </tr>
+
+
+        <tr class="tableRow">
+          <td class="tableCol ColA Group4"><button type="button" name="button" class="btn btn-info fieldBtn" onclick="addNumber(41)" id="field41"></button></td>
+          <td class="tableCol ColA Group4"><button type="button" name="button" class="btn btn-info fieldBtn" onclick="addNumber(42)" id="field42"></button></td>
+          <td class="tableCol ColA Group4"><button type="button" name="button" class="btn btn-info fieldBtn" onclick="addNumber(43)" id="field43"></button></td>
+
+          <td class="tableCol ColA Group5"><button type="button" name="button" class="btn btn-info fieldBtn" onclick="addNumber(44)" id="field44"></button></td>
+          <td class="tableCol ColA Group5"><button type="button" name="button" class="btn btn-info fieldBtn" onclick="addNumber(45)" id="field45"></button></td>
+          <td class="tableCol ColA Group5"><button type="button" name="button" class="btn btn-info fieldBtn" onclick="addNumber(46)" id="field46"></button></td>
+
+          <td class="tableCol ColA Group6"><button type="button" name="button" class="btn btn-info fieldBtn" onclick="addNumber(47)" id="field47"></button></td>
+          <td class="tableCol ColA Group6"><button type="button" name="button" class="btn btn-info fieldBtn" onclick="addNumber(48)" id="field48"></button></td>
+          <td class="tableCol ColA Group6"><button type="button" name="button" class="btn btn-info fieldBtn" onclick="addNumber(49)" id="field49"></button></td>
+        </tr>
+        <tr class="tableRow">
+          <td class="tableCol ColB Group4"><button type="button" name="button" class="btn btn-info fieldBtn" onclick="addNumber(51)" id="field51"></button></td>
+          <td class="tableCol ColB Group4"><button type="button" name="button" class="btn btn-info fieldBtn" onclick="addNumber(52)" id="field52"></button></td>
+          <td class="tableCol ColB Group4"><button type="button" name="button" class="btn btn-info fieldBtn" onclick="addNumber(53)" id="field53"></button></td>
+
+          <td class="tableCol ColB Group5"><button type="button" name="button" class="btn btn-info fieldBtn" onclick="addNumber(54)" id="field54"></button></td>
+          <td class="tableCol ColB Group5"><button type="button" name="button" class="btn btn-info fieldBtn" onclick="addNumber(55)" id="field55"></button></td>
+          <td class="tableCol ColB Group5"><button type="button" name="button" class="btn btn-info fieldBtn" onclick="addNumber(56)" id="field56"></button></td>
+
+          <td class="tableCol ColB Group6"><button type="button" name="button" class="btn btn-info fieldBtn" onclick="addNumber(57)" id="field57"></button></td>
+          <td class="tableCol ColB Group6"><button type="button" name="button" class="btn btn-info fieldBtn" onclick="addNumber(58)" id="field58"></button></td>
+          <td class="tableCol ColB Group6"><button type="button" name="button" class="btn btn-info fieldBtn" onclick="addNumber(59)" id="field59"></button></td>
+
+        </tr>
+        <tr class="tableRow">
+          <td class="tableCol ColC Group4"><button type="button" name="button" class="btn btn-info fieldBtn" onclick="addNumber(61)" id="field61"></button></td>
+          <td class="tableCol ColC Group4"><button type="button" name="button" class="btn btn-info fieldBtn" onclick="addNumber(62)" id="field62"></button></td>
+          <td class="tableCol ColC Group4"><button type="button" name="button" class="btn btn-info fieldBtn" onclick="addNumber(63)" id="field63"></button></td>
+
+          <td class="tableCol ColC Group5"><button type="button" name="button" class="btn btn-info fieldBtn" onclick="addNumber(64)" id="field64"></button></td>
+          <td class="tableCol ColC Group5"><button type="button" name="button" class="btn btn-info fieldBtn" onclick="addNumber(65)" id="field65"></button></td>
+          <td class="tableCol ColC Group5"><button type="button" name="button" class="btn btn-info fieldBtn" onclick="addNumber(66)" id="field66"></button></td>
+
+          <td class="tableCol ColC Group6"><button type="button" name="button" class="btn btn-info fieldBtn" onclick="addNumber(67)" id="field67"></button></td>
+          <td class="tableCol ColC Group6"><button type="button" name="button" class="btn btn-info fieldBtn" onclick="addNumber(68)" id="field68"></button></td>
+          <td class="tableCol ColC Group6"><button type="button" name="button" class="btn btn-info fieldBtn" onclick="addNumber(69)" id="field69"></button></td>
+        </tr>
+
+
+        <tr class="tableRow">
+          <td class="tableCol ColA Group7"><button type="button" name="button" class="btn btn-info fieldBtn" onclick="addNumber(71)" id="field71"></button></td>
+          <td class="tableCol ColA Group7"><button type="button" name="button" class="btn btn-info fieldBtn" onclick="addNumber(72)" id="field72"></button></td>
+          <td class="tableCol ColA Group7"><button type="button" name="button" class="btn btn-info fieldBtn" onclick="addNumber(73)" id="field73"></button></td>
+
+          <td class="tableCol ColA Group8"><button type="button" name="button" class="btn btn-info fieldBtn" onclick="addNumber(74)" id="field74"></button></td>
+          <td class="tableCol ColA Group8"><button type="button" name="button" class="btn btn-info fieldBtn" onclick="addNumber(75)" id="field75"></button></td>
+          <td class="tableCol ColA Group8"><button type="button" name="button" class="btn btn-info fieldBtn" onclick="addNumber(76)" id="field76"></button></td>
+
+          <td class="tableCol ColA Group9"><button type="button" name="button" class="btn btn-info fieldBtn" onclick="addNumber(77)" id="field77"></button></td>
+          <td class="tableCol ColA Group9"><button type="button" name="button" class="btn btn-info fieldBtn" onclick="addNumber(78)" id="field78"></button></td>
+          <td class="tableCol ColA Group9"><button type="button" name="button" class="btn btn-info fieldBtn" onclick="addNumber(79)" id="field79"></button></td>
+        </tr>
+        <tr class="tableRow">
+          <td class="tableCol ColB Group7"><button type="button" name="button" class="btn btn-info fieldBtn" onclick="addNumber(81)" id="field81"></button></td>
+          <td class="tableCol ColB Group7"><button type="button" name="button" class="btn btn-info fieldBtn" onclick="addNumber(82)" id="field82"></button></td>
+          <td class="tableCol ColB Group7"><button type="button" name="button" class="btn btn-info fieldBtn" onclick="addNumber(83)" id="field83"></button></td>
+
+          <td class="tableCol ColB Group8"><button type="button" name="button" class="btn btn-info fieldBtn" onclick="addNumber(84)" id="field84"></button></td>
+          <td class="tableCol ColB Group8"><button type="button" name="button" class="btn btn-info fieldBtn" onclick="addNumber(85)" id="field85"></button></td>
+          <td class="tableCol ColB Group8"><button type="button" name="button" class="btn btn-info fieldBtn" onclick="addNumber(86)" id="field86"></button></td>
+
+          <td class="tableCol ColB Group9"><button type="button" name="button" class="btn btn-info fieldBtn" onclick="addNumber(87)" id="field87"></button></td>
+          <td class="tableCol ColB Group9"><button type="button" name="button" class="btn btn-info fieldBtn" onclick="addNumber(88)" id="field88"></button></td>
+          <td class="tableCol ColB Group9"><button type="button" name="button" class="btn btn-info fieldBtn" onclick="addNumber(89)" id="field89"></button></td>
+
+        </tr>
+        <tr class="tableRow">
+          <td class="tableCol ColC Group7"><button type="button" name="button" class="btn btn-info fieldBtn" onclick="addNumber(91)" id="field91"></button></td>
+          <td class="tableCol ColC Group7"><button type="button" name="button" class="btn btn-info fieldBtn" onclick="addNumber(92)" id="field92"></button></td>
+          <td class="tableCol ColC Group7"><button type="button" name="button" class="btn btn-info fieldBtn" onclick="addNumber(93)" id="field93"></button></td>
+
+          <td class="tableCol ColC Group8"><button type="button" name="button" class="btn btn-info fieldBtn" onclick="addNumber(94)" id="field94"></button></td>
+          <td class="tableCol ColC Group8"><button type="button" name="button" class="btn btn-info fieldBtn" onclick="addNumber(95)" id="field95"></button></td>
+          <td class="tableCol ColC Group8"><button type="button" name="button" class="btn btn-info fieldBtn" onclick="addNumber(96)" id="field96"></button></td>
+
+          <td class="tableCol ColC Group9"><button type="button" name="button" class="btn btn-info fieldBtn" onclick="addNumber(97)" id="field97"></button></td>
+          <td class="tableCol ColC Group9"><button type="button" name="button" class="btn btn-info fieldBtn" onclick="addNumber(98)" id="field98"></button></td>
+          <td class="tableCol ColC Group9"><button type="button" name="button" class="btn btn-info fieldBtn" onclick="addNumber(99)" id="field99"></button></td>
+        </tr>
+
+
+      </table>
+      <div class="numbers">
+        <div class="btn-box" onclick="numberClick(1)" id="num1">
+          <center><p>1</p></center>
+        </div>
+        <div class="btn-box" onclick="numberClick(2)" id="num2">
+          <center><p>2</p></center>
+        </div>
+        <div class="btn-box" onclick="numberClick(3)" id="num3">
+          <center><p>3</p></center>
+        </div>
+        <div class="btn-box" onclick="numberClick(4)" id="num4">
+          <center><p>4</p></center>
+        </div>
+        <div class="btn-box" onclick="numberClick(5)" id="num5">
+          <center><p>5</p></center>
+        </div>
+        <div class="btn-box" onclick="numberClick(6)" id="num6">
+          <center><p>6</p></center>
+        </div>
+        <div class="btn-box" onclick="numberClick(7)" id="num7">
+          <center><p>7</p></center>
+        </div>
+        <div class="btn-box" onclick="numberClick(8)" id="num8">
+          <center><p>8</p></center>
+        </div>
+        <div class="btn-box" onclick="numberClick(9)" id="num9">
+          <center><p>9</p></center>
+        </div>
+      </div>
+
+
+    </div>
+  </body>
+</html>
+<!-- /*DEVELOPED BY MAYK*/ -->
