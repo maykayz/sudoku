@@ -182,7 +182,7 @@ function showValues(){
 
   var cell54 = new Cell(54,5,"#field54");
   var cell55 = new Cell(55,2,"#field55");
-  var cell56 = new Cell(56,3,"#field56");
+  var cell56 = new Cell(56,4,"#field56");
 
   var cell57 = new Cell(57,6,"#field57");
   var cell58 = new Cell(58,3,"#field58");
