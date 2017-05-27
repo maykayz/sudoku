@@ -56,6 +56,8 @@ function addNumber(num){
           alert("Noob..!");
         }else if(errorCount === 50){
           alert("You sucks...!");
+        }else if(errorCount === 100){
+        	alert("Use your brain dude..!");
         }
       }
     }
@@ -163,7 +165,7 @@ function showValues(){
   var cell39 = new Cell(39,3,"#field39");
   // ROW 4
   var cell41 = new Cell(41,6,"#field41");
-  var cell42 = new Cell(42,3,"#field42");
+  var cell42 = new Cell(42,2,"#field42");
   var cell43 = new Cell(43,5,"#field43");
 
   var cell44 = new Cell(44,8,"#field44");
