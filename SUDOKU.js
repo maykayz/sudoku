@@ -57,7 +57,7 @@ function addNumber(num){
         }else if(errorCount === 50){
           alert("You sucks...!");
         }else if(errorCount === 100){
-        	alert("Use your brain dude..!");
+        	alert("Think, dude :3");
         }
       }
     }
@@ -79,7 +79,7 @@ function checkAnswer(num,cellNo){
       ans=true;
       correctCellCount++;
       if(correctCellCount === 81){
-        alert("Congratulations.....!");
+        alert("You did it, Mate..!");
       }
     }
   return ans;
